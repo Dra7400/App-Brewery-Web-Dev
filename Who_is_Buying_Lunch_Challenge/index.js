@@ -18,4 +18,4 @@ var ranNum = Math.floor(Math.random()*names.length);
 /******Don't change the code below*******/    
 }
 // var names = ["Angela", "Nicole", "Emre", "Jun", "Kuromi"];
-console.log (whosPaying(["Angela", "Nicole", "Mason", "Laura", "Dave"]) );
+console.log (whosPaying(["Angela", "Nicole", "Emre", "Jun", "Kuromi"]) );
