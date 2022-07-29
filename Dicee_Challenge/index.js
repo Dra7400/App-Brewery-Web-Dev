@@ -4,19 +4,19 @@ var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
 //Uses the random number to create a random filename
 var randomDiceImage1 = "dice" + randomNumber1 + ".png";
-var randomDiceImage2 = "dice" + randomNumber2 + ".png";
+// var randomDiceImage2 = "dice" + randomNumber2 + ".png";
 
 //Creates the filepath
 var randomImageSource1 = "images/" + randomDiceImage1;
-var randomImageSource2 = "images/" + randomDiceImage2;
+var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
 
 //accessing the image
 var image1 = document.querySelectorAll("img")[0];
-var image2 = document.querySelectorAll("img")[1];
+document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 // changing the image
 image1.setAttribute("src", randomImageSource1);
-image2.setAttribute("src", randomImageSource2);
+// image2.setAttribute("src", randomImageSource2);
 
 // Simple logic of comparison
 var title = document.querySelector("h1");
