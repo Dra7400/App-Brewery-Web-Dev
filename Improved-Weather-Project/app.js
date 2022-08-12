@@ -13,7 +13,7 @@ app.get("/", function (req, res) {
 app.post("/", function (req, res) {
   const query = req.body.cityName;
   const apiKey = "yourAPI";
-  const units = "mperial";
+  const units = "imperial";
   const url =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     query +
@@ -38,7 +38,7 @@ app.post("/", function (req, res) {
           query +
           " is " +
           temp +
-          " degrees Celcius.</h1>"
+          " degrees.</h1>"
       );
       res.write("<img src=" + imageURL + ">");
       res.send();
