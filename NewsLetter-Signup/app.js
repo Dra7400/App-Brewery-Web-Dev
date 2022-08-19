@@ -31,11 +31,11 @@ app.post("/", function (req, res){
  };
 
   const jsonData = JSON.stringify(data);
-  const url = "https://us13.api.mailchimp.com/3.0/lists/cc6e9f5869";
+  const url = "https://us13.api.mailchimp.com/3.0/lists/your audience ID";
 
   const options = {
     method: "POST",
-    auth: "dra7400:9bbfb97666bb2f4324dcca497d2cbcf9-us13"
+    auth: "your username:yourAPI"
 };
 
 
@@ -65,6 +65,3 @@ app.listen(process.env.PORT || 3000, function () {
   console.log("Server is running on port ");
 });
 
-// 9bbfb97666bb2f4324dcca497d2cbcf9-us13
-
-// cc6e9f5869
